@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Courses - Holberton Smiling School</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Coiny&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./holberton_school-icon/style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header-pricing">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-main navbar-expand-md navbar-dark bg-dark justify-content-between fixed-top"
+      >
+        <div class="container px-md-3">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target=".dual-nav"
+          >
+            <span class="icon holberton_school-icon-menu icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse dual-nav text-center w-30 order-1 order-md-2"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link pl-0" href="#">COURSES</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="#">PRICING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">LOGIN</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            class="navbar-brand d-block text-center w-25 order-0 order-md-1"
+            href="/"
+          >
+            <img
+              class="img-responsive smile_off d-block d-md-inline-block mr-md-2 mx-auto"
+              src="images/smile_off.png"
+              alt="smile_off"
+            />
+            <img
+              class="img-responsive logo_text d-block d-md-inline-block mx-auto"
+              src="images/logo.png"
+              alt="logo_text"
+            />
+          </a>
+          <div
+            class="collapse navbar-collapse dual-nav d-md-block w-50 order-1 d-sm-none"
+          ></div>
+        </div>
+      </nav>
+      <!-- Section Hero -->
+      <section class="hero-courses-section">
+        <div class="container-hero-courses">
+          <h1 class="title-courses font-weight-bold text-white text-center">
+            « Don’t cry because it’s over. <br />
+            <span class="smile-text">Smile</span> because it happened. »
+          </h1>
+        </div>
+      </section>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Filters Section -->
+      <section class="search-filters-section container-fluid">
+        <div class="form container-lg">
+          <nav class="navbar row">
+            <div class="form-group col-md-4 my-1">
+              <label
+                class="title-search-filters font-weight-bold text-white"
+                for="search"
+                >KEYWORDS</label
+              >
+              <div class="input-group">
+                <div class="input-group-prepend bg-span">
+                  <span
+                    class="input-group-text icon holberton_school-icon-search_1 icon border-0"
+                    id="basic-addon1"
+                  ></span>
+                </div>
+                <input
+                  type="search"
+                  class="form-control d-flex justify-content-center w-100 bg-filter border-0"
+                  placeholder="Search by keywords"
+                />
+              </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-6 my-1">
+              <label
+                class="title-search-filters font-weight-bold text-white"
+                for="topic"
+                >TOPIC</label
+              >
+              <select class="form-control bg-filter border-0" id="topic">
+                <option>Novice</option>
+                <option>Intermediate</option>
+                <option>Expert</option>
+              </select>
+            </div>
+            <div class="form-group col-md-4 col-sm-6 my-1">
+              <label
+                class="title-search-filters font-weight-bold text-white"
+                for="sort"
+                >SORT BY</label
+              >
+              <select class="form-control bg-filter border-0" id="sort">
+                <option>Most popular</option>
+                <option>Most recent</option>
+                <option>Most viewed</option>
+              </select>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- Section Results -->
+      <section class="courses-result-section py-5">
+        <div class="container-fluid container-courses-result p-5">
+          <p class="videos">11 videos</p>
+          <div class="row mx-auto">
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_4.jpg"
+                    alt="Diagonal Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Diagonal Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_3.jpg"
+                    alt="Sad Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Sad Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_1.jpg"
+                    alt="Natural Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Natural Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card mb-2 d-flex justify-content-center border border-0"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_2.jpg"
+                    alt="Happy Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Happy Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_4.jpg"
+                    alt="Diagonal Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Diagonal Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_3.jpg"
+                    alt="Sad Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Sad Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center mb-0 ml-3">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_1.jpg"
+                    alt="Natural Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Natural Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_2.jpg"
+                    alt="Happy Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Happy Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_4.jpg"
+                    alt="Diagonal Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Diagonal Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_3.jpg"
+                    alt="Sad Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Sad Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-4 col-xl-3 d-flex justify-content-center pb-3"
+            >
+              <div
+                class="card d-flex justify-content-center border border-0 mb-2"
+              >
+                <div
+                  class="card-img-top d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    class="img-top"
+                    src="images/thumbnail_1.jpg"
+                    alt="Natural Smile"
+                  />
+                  <img class="img-play" src="images/play.png" alt="play" />
+                </div>
+                <div class="card-body-tutorial">
+                  <h4 class="card-title-tutorial font-weight-bold mt-3">
+                    Natural Smile
+                  </h4>
+                  <p class="card-text-tutorial">
+                    Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+                    eiusmod.
+                  </p>
+                  <div class="author d-flex flex-row justify-content-start">
+                    <img
+                      class="img-author"
+                      src="images/profile_1.jpg"
+                      alt="Phillip Massey"
+                    />
+                    <p class="name-author align-self-center ml-3 mb-0">
+                      Phillip Massey
+                    </p>
+                  </div>
+                  <div
+                    class="score-time d-flex flex-row justify-content-between mt-2"
+                  >
+                    <div class="score">
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_on.png"
+                        alt="stars"
+                      />
+                      <img
+                        class="img-score"
+                        src="images/star_off.png"
+                        alt="stars"
+                      />
+                    </div>
+                    <p class="time">8 min</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
